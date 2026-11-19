@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2>Image<span>Gallery.</span></h2>
+            <p>Explore • Discover • Enjoy</p>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <p class="tagline">A WORLD OF BEAUTIFUL IMAGES</p>
+        <h1>Explore Our <span>Gallery</span></h1>
+        <p class="description">
+            Discover beautiful collections of flowers, mobiles and actors.
+            Find your favourite pictures in one place.
+        </p>
+
+        <div class="search-box">
+            <input type="text" id="search"
+                   placeholder="Search your favourite images...">
+        </div>
+    </section>
+
+    <main class="container">
+
+        <div class="filter-section">
+            <div class="filters">
+                <button class="filter-btn active" data-category="All">All</button>
+                <button class="filter-btn" data-category="Flowers">Flowers</button>
+                <button class="filter-btn" data-category="Fruits">Fruits</button>
+                <button class="filter-btn" data-category="Actors">Actors</button>
+                <button class="filter-btn" data-category="Cricketers">Cricketers</button>
+            </div>
+
+            <p id="imageCount"></p>
+        </div>
+
+        <div id="gallery" class="gallery"></div>
+
+        <p id="emptyMessage" class="empty-message">
+            No images found!
+        </p>
+    </main>
+    <footer>
+        <p>© 2026 Visual Gallery | Designed with HTML, CSS & JavaScript</p>
+    </footer>
+    <div id="lightbox" class="lightbox">
+        <button id="closeBtn" class="close-btn">&times;</button>
+        <img id="previewImage" src="" alt="Image preview">
+        <h3 id="previewName"></h3>
+    </div>
+
+    <script src="image.js"></script>
+
+</body>
+</html>
